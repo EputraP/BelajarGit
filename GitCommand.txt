@@ -10,4 +10,10 @@
 - process pada git:
 1. Kita ngerjain project di working tree yang udah terasosiasi dengan git (udah ngelakuin git init)
 
-2 
+2. nanti git memantau ada perubahan pada file2 kita yang di working tree atau gk
+
+3. bisa dichecknya pake git status
+
+4. kalo ada, bisa make git add untuk masukin file2 yang ada perubahan tadi ke staging area.
+
+5  kalo udh oke sama perubahannya bisa pake git commit untuk menyimpan perubahan tadi + ngasih keteranganya
