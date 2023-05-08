@@ -24,8 +24,21 @@
 > git config : untuk ngasih identitas pada commit, sebaiknya disamakan dengan akun github atau gitlab
   o git config --global user.email "EputraP@gmail.com" : ngasih email
   o git config --global user.name "EputraP" :ngasih username
+  o git config --list : ngasih tau isi konfigurasinya
 > git status : memantau status file pada repo git, misal ada perubahan, ada file di staging, sekarang di branch apa
 > git add : buat masukin ke staging area
   o git add . : ngeadd semua file yang ada perubahan
   o git add <nama file> : ngeadd spesifik file tertentu yang ada perubahan
-> git commit
+> git commit : untuk masukin file yang ada di staging area ke history area
+  o git commit -m "pesannya" : jadi pesannya ini bakal jadi commit di semua file yang ada di staging area
+  o git commit -m "pesannya" <nama file> : pesannya ini bakal cuma ada di satu file aja
+> git log : untuk ngasih history commit yang udah dilakukan ini untuk semua file
+  o git log -<jumlah berapa history terkahir>
+    cnth => git log -3 : bakal nampilin 3 perubahan commit terbaru
+  o git log -- <nama file> : untuk nampilin history commit dari file tertentu
+>git checkout <5 digit awal commit id> : untuk mengambalikan file di repo ke versi sebelumnya, milih versi yang mana bergantu 5 digit commitnya. nah liat commit id bisa lewat git log
+  o git checkout <5 digit awal commit id> -- <nama file> : untuk mengembalikan ke versi sebelumnya terkhusus 1 file aja
+
+
+
+
