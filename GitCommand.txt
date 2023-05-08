@@ -1,0 +1,13 @@
+- Tahapan git:
+1. Working tree
+2. Staging Area
+3. History
+
+- Working tree ini adalah file pekerjaan kita yang udah terkonek ke git repo
+
+- Staging area sama History ada di folder .git
+
+- process pada git:
+1. Kita ngerjain project di working tree yang udah terasosiasi dengan git (udah ngelakuin git init)
+
+2 
