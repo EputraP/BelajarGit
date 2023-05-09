@@ -3,9 +3,15 @@
 2. Staging Area
 3. History
 
+
+
 - Working tree ini adalah file pekerjaan kita yang udah terkonek ke git repo
 
+
+
 - Staging area sama History ada di folder .git
+
+
 
 - process pada git:
 1. Kita ngerjain project di working tree yang udah terasosiasi dengan git (udah ngelakuin git init)
@@ -19,27 +25,67 @@
 5  kalo udh oke sama perubahannya bisa pake git commit untuk menyimpan perubahan tadi + ngasih keteranganya
 
 
+
 - git command list:
+
 > git init : inisialisasi git
+
 > git config : untuk ngasih identitas pada commit, sebaiknya disamakan dengan akun github atau gitlab
   o git config --global user.email "EputraP@gmail.com" : ngasih email
   o git config --global user.name "EputraP" :ngasih username
   o git config --list : ngasih tau isi konfigurasinya
+
 > git status : memantau status file pada repo git, misal ada perubahan, ada file di staging, sekarang di branch apa
+
 > git add : buat masukin ke staging area
   o git add . : ngeadd semua file yang ada perubahan
   o git add <nama file> : ngeadd spesifik file tertentu yang ada perubahan
+
 > git commit : untuk masukin file yang ada di staging area ke history area
   o git commit -m "pesannya" : jadi pesannya ini bakal jadi commit di semua file yang ada di staging area
   o git commit -m "pesannya" <nama file> : pesannya ini bakal cuma ada di satu file aja
+
 > git log : untuk ngasih history commit yang udah dilakukan ini untuk semua file
   o git log -<jumlah berapa history terkahir>
     cnth => git log -3 : bakal nampilin 3 perubahan commit terbaru
   o git log -- <nama file> : untuk nampilin history commit dari file tertentu
+
 >git checkout <5 digit awal commit id> : untuk mengambalikan file di repo ke versi sebelumnya, milih versi yang mana bergantu 5 digit commitnya. nah liat commit id bisa lewat git log
   o git checkout <5 digit awal commit id> -- <nama file> : untuk mengembalikan ke versi sebelumnya terkhusus 1 file aja
+  o git checkout <nama_branch> : untuk pindah branch
+
 > git remote -v : ngecek origin
 
+
+> git branch : ngelist branch yang aktif
+  o git branch <nama_branch> : buat branch baru
+  o git log --all --decorate --oneline --graph : menampilkan visualisasi branch dalam bentuk graph (kayak insight di github)
+  
+
+
+-------------------------- Branch and Head ---------------------------------------------------
+
+- dalam sebuah hash message commit terdapat informasi username, email, timestamp
+
+
+- setiap commit terhubung ke sebuah branch
+
+
+- head = untuk mengetahui branch yang aktif
+
+
+- ketika ada commit yang baru maka branch master dan head bakal pindah ke commit yang baru
+
+
+- ketika pindah branch, maka bakal ada commit baru. nah head tadi sebagai penanda branch yang aktif bakal pindah ke branch yang kita tuju tadi
+
+- flow cara pindah branch:
+> bikin branch nya
+> hbis itu git checkout
+> terus mungkin lakukan perubahan di branch nya
+> terus di commit pada branch itu
+
+- 
 
 
 
