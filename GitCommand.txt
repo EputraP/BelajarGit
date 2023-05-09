@@ -59,7 +59,14 @@
 
 > git branch : ngelist branch yang aktif
   o git branch <nama_branch> : buat branch baru
-  o git log --all --decorate --oneline --graph : menampilkan visualisasi branch dalam bentuk graph (kayak insight di github)
+  o git branch -d <nama_branch> : untuk delete branch (yang sudah di merged, kalo misal dipakai untuk yang blm di merged bakal muncul warning)
+  o git branch -D <nama_branch> : untuk delete branch (yang belum di merged)
+  o git branch --merged : untuk mengetahui branch yang sudah di merged
+  o git log --all --decorate --oneline --graph : menampilkan visualisasi branch dalam bentuk graph (kayak insight network di github)
+
+> git merge <nama_branch> : untuk ngemerge branch yang dipingin dengan branch master
+
+
   
 
 
@@ -85,7 +92,21 @@
 > terus mungkin lakukan perubahan di branch nya
 > terus di commit pada branch itu
 
-- 
+- jenis merge:
+> fast forward 
+  o terjadi ketika jalur yang ingin di merge berada pada direct path/jalur langsung
+  o direct path disini maksudnya jalur cabangnya dari si branch itu langsung ke master
+  o flow:
+	- pindahin head atau branch aktinya ke master pakai checkout
+	- terus pakai git merge <nama_branch> untuk ngemerge branch yang kita pengen ke branch master
+	- lalu nanti master (branch aktif, ada headnya) bakal pindah ke branch yang kita merge ke master
+	- pas udah pindah merge, branch yang kita merge dengan master masih aktif
+	- jadi pas pindah itu, sekarang master (branch aktif) bakal pindah ke commit branch yang kita merge dengan master
+  o jadi intinya mergenya ntar, si master (branch aktif) bakal pindah ke commit dari branch yang kita pengen merge dengan master
+
+> three-way merge (merge commit)
+  o terjadi ketika jalur yang ingin di merge, tidak berada pada satu jalur
+  o jadi intinya ngemerge nya ntar, mbuat commit baru gabungan dua branch.
 
 
 
