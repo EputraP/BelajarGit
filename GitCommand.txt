@@ -38,6 +38,7 @@
   o git log -- <nama file> : untuk nampilin history commit dari file tertentu
 >git checkout <5 digit awal commit id> : untuk mengambalikan file di repo ke versi sebelumnya, milih versi yang mana bergantu 5 digit commitnya. nah liat commit id bisa lewat git log
   o git checkout <5 digit awal commit id> -- <nama file> : untuk mengembalikan ke versi sebelumnya terkhusus 1 file aja
+> git remote -v : ngecek origin
 
 
 
