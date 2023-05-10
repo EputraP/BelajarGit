@@ -67,13 +67,16 @@
 
 > git remote : untuk mengetahui origin
   o git remote -v : ngecek origin
-  o git remote add origin : untuk nambahin origin remote
+  o git remote add origin <link_remote>: untuk nambahin origin remote
+  o git remote add <nama_remote> <link_remote> : untuk nambahin remote baru
   
 > git push : untuk push projek di semua branch ke remote
-  o git push origin <branch_name> : ngepush projek untuk branch tertentu
-  o git push -u origin <branch_name> : fungsinya biar pas ngepullnya, si git remote udah tau branch yang mau di pull 
+  o git push <nama_remote> <branch_name> : ngepush projek untuk branch tertentu
+  o git push -u <nama_remote> <branch_name> : fungsinya biar pas ngepullnya, si git remote udah tau branch yang mau di pull 
 
 > git pull : untuk update repo di local dari repo git
+
+> git fetch : untuk ambil commit dari repo remote
 
 
 -------------------------- Branch and Head ---------------------------------------------------
