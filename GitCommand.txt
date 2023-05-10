@@ -56,7 +56,6 @@
 
 > git remote -v : ngecek origin
 
-
 > git branch : ngelist branch yang aktif
   o git branch <nama_branch> : buat branch baru
   o git branch -d <nama_branch> : untuk delete branch (yang sudah di merged, kalo misal dipakai untuk yang blm di merged bakal muncul warning)
@@ -66,6 +65,7 @@
 
 > git merge <nama_branch> : untuk ngemerge branch yang dipingin dengan branch master
 
+> git clone <link_repo_github> : ngambil repo di remote ke server local
 
   
 
@@ -109,4 +109,5 @@
   o jadi intinya ngemerge nya ntar, mbuat commit baru gabungan dua branch.
 
 
-
+---------------------- git remote --------------------------------------------------
+- 
