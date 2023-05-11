@@ -78,6 +78,7 @@
 
 > git fetch : untuk ambil commit dari repo remote
 
+> git rebase : untuk rebase
 
 -------------------------- Branch and Head ---------------------------------------------------
 
@@ -121,3 +122,9 @@
 ---------------------- .gitignore --------------------------------------------------
 - fungsinya menghindari file2 yang tidak diinginkan ikut terbawa
 - kalo mau tau file2 yang disarankan untuk gitIgnore coba buka gitignore.io
+
+---------------------- git merge and rebase --------------------------------------------------
+- kelemahan dari three way merge adalah commitnya bakal banyak banget, jadi idealnya kalo merge itu pakai fast forward merge
+- kalo rebase itu, 
+  > ketika master dan branch nya dalam bentuk pararel, maka merge yang bisa dilakukan cuma pakai three way merge
+  > nah kalo kita pakai rebase cabang pararelnya bakal maju ke commit terakhir master, jadi yang sebelumnya paralel jadi seri dengan branchnya (fastforward)
