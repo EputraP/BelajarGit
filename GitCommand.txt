@@ -118,5 +118,6 @@
   o jadi intinya ngemerge nya ntar, mbuat commit baru gabungan dua branch.
 
 
----------------------- git remote --------------------------------------------------
+---------------------- .gitignore --------------------------------------------------
+- fungsinya menghindari file2 yang tidak diinginkan ikut terbawa
 - 
