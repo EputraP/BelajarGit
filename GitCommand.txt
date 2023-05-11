@@ -120,4 +120,4 @@
 
 ---------------------- .gitignore --------------------------------------------------
 - fungsinya menghindari file2 yang tidak diinginkan ikut terbawa
-- 
+- kalo mau tau file2 yang disarankan untuk gitIgnore coba buka gitignore.io
